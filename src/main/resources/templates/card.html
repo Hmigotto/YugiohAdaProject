@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Yu-Gi-Oh! Cards</title>
+</head>
+<body>
+    <h1>Add Card</h1>
+    <form action="/createByName" method="post">
+        <label for="cardName">Enter Card Name:</label>
+        <input type="text" id="cardName" name="cardName">
+        <button type="submit">Create by Name</button>
+    </form>
+    <h1>Yu-Gi-Oh! Cards</h1>
+    <!--<ul>
+        <li th:each="card : ${cards}">
+            <img src="${card.img}"/>
+        </li>
+    </ul>-->
+</body>
